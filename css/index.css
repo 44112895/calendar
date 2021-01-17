@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+body {
+    background-color: #204d74;
+}
+
+.container {
+    width: 800px;
+    height: 500px;
+    margin: 130px auto;
+}
+
+.container>h1 {
+    height: 50px;
+    line-height: 50px;
+}
+
+.container>h1>a {
+    color: #f15b6c;
+}
+
+#show {
+    background-color: transparent;
+    outline: none;
+    text-align: left;
+    padding: 5px 0 5px 10px;
+    cursor: pointer;
+    margin: 20px 0;
+}
+
+.container>header {
+    width: 80%;
+    height: 40px;
+    line-height: 40px;
+    background-color: #00b894;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container>header>span {
+    width: 10%;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+}
+
+/*.container>header>span:not(:last-child) {
+    margin-right: 1%;
+}*/
+
+.container>header>span:not(:nth-child(3)) {
+    cursor: pointer;
+}
+
+.container>header>span:not(:nth-child(3)):hover {
+    box-shadow: 0 0 6px #003a75;
+}
+
+.container>header>span:nth-child(3) {
+    width: 50%;
+}
+
+.container>table {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container>table th, .container>table td {
+    border: 1px solid black;
+}
+
+.container>table td {
+    cursor: pointer;
+}
+
+.container>table td:not(.others):hover {
+    color: red;
+}
+
+.container>table td.others {
+    color: #666666;
+}
+
+.container>.footer {
+    display: none;
+    height: 50px;
+    line-height: 50px;
+    color: greenyellow;
+    font-weight: bold;
+    font-size: 20px;
+}
